@@ -1,0 +1,37 @@
+<stamplay logout></stamplay>
+
+<!-- LOL -->
+
+{{#if user}}
+
+  <section id="feedbackForm" class="topPad">
+    <div class="container">
+      
+      <div class="formContainer">
+      
+        <stamplay form-submit data-form-id='test-form' data-template-url='form-submit.html'></stamplay>
+        <!-- STAMPLAY Form WIDGET END -->
+        
+      </div>
+          
+    </div>
+  </section>
+  
+{{else}}
+
+  <section id="loginForm" class="topPad">
+    <div class="container">
+    
+      <div class="formContainer">
+      
+        <h1>Please login to give feedback!</h1>
+  
+        <stamplay login-github></stamplay>
+        <!-- STAMPLAY Social login WIDGET END -->
+        
+      </div>
+    
+    </div>
+  </section>
+  
+{{/if}}
